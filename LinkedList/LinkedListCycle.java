@@ -15,6 +15,14 @@ public class LinkedListCycle {
     }
 
     public static void main(String[] args) {
-
+        LinkedListCycle llCycle = new LinkedListCycle();
+        Solution solution = llCycle.new Solution();
+        
+        ListNode head = PredefinedLinkedList.createPredefinedList();
+        System.out.println("Linked List:");
+        PredefinedLinkedList.printList(head);
+        
+        boolean hasCycle = solution.hasCycle(head);
+        System.out.println("\nHas Cycle: " + hasCycle);
     }
 }

@@ -13,6 +13,15 @@ public class ReverseLL {
         }
     }
     public static void main(String[] args) {
+        ReverseLL reverser = new ReverseLL();
+        Solution solution = reverser.new Solution();
         
+        ListNode head = PredefinedLinkedList.createPredefinedList();
+        System.out.println("Original List:");
+        PredefinedLinkedList.printList(head);
+        
+        ListNode reversedHead = solution.reverseList(head);
+        System.out.println("\nReversed List:");
+        PredefinedLinkedList.printList(reversedHead);
     }
 }

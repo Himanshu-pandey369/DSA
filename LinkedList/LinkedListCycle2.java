@@ -26,6 +26,18 @@ public class LinkedListCycle2 {
     }
 
     public static void main(String[] args) {
-
+        LinkedListCycle2 llCycle2 = new LinkedListCycle2();
+        Solution solution = llCycle2.new Solution();
+        
+        ListNode head = PredefinedLinkedList.createPredefinedList();
+        System.out.println("Linked List:");
+        PredefinedLinkedList.printList(head);
+        
+        ListNode cycleStart = solution.detectCycle(head);
+        if (cycleStart != null) {
+            System.out.println("\nCycle detected at node with value: " + cycleStart.val);
+        } else {
+            System.out.println("\nNo cycle detected in the list");
+        }
     }
 }

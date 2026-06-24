@@ -11,6 +11,16 @@ public class MiddleOfTheLinkedList {
         }
     }
     public static void main(String[] args) {
+        MiddleOfTheLinkedList middle = new MiddleOfTheLinkedList();
+        Solution solution = middle.new Solution();
         
+        ListNode head = PredefinedLinkedList.createPredefinedList();
+        System.out.println("Linked List:");
+        PredefinedLinkedList.printList(head);
+        
+        ListNode middleNode = solution.middleNode(head);
+        System.out.println("\nMiddle Node Value: " + middleNode.val);
+        System.out.println("Middle Node and onwards:");
+        PredefinedLinkedList.printList(middleNode);
     }
 }
