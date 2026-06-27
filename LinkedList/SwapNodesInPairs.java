@@ -1,5 +1,5 @@
 public class SwapNodesInPairs {
-    ListNode SwapNodesInPairs(ListNode head){
+    ListNode SwapNodes(ListNode head){
         if(head==null||head.next==null){
             return head;
         }
