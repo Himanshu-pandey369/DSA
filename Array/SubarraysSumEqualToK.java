@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class SubarraysSumEqualToK {
-    public int subarraySum(int[] nums, int k) {
+    public static int SubarraySum(int[] nums, int k) {
 
         HashMap<Integer, Integer> map = new HashMap<>();
 
@@ -22,6 +22,12 @@ public class SubarraysSumEqualToK {
         }
 
         return count;
+    }
+        public static void main(String[] args) {
+        int[] nums = {9,4,20,3,10,5};
+        int target = 33;
+
+        System.out.println(SubarraySum(nums, target));
     }
 }
 
