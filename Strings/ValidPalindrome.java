@@ -1,6 +1,6 @@
 public class ValidPalindrome {
     boolean alphanumeric(char ch) {
-        if ((ch >= 'a' && ch <= 'z') ||
+        if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') ||
                 (ch >= '0' && ch <= '9')) {
             return true;
         }
