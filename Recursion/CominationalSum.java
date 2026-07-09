@@ -21,7 +21,6 @@ class CominationalSum {
 
         for (int i = index; i < candidates.length; i++) {
             current.add(candidates[i]);
-            // i is passed instead of i+1 because the same element can be reused
             backtrack(candidates, target - candidates[i], i, current, result);
             current.remove(current.size() - 1); // backtrack
         }
